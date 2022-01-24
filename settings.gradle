@@ -7,4 +7,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "RepositorioDave"
-include ':app'
+include ':Activities-Fragments'
+include ':UI'

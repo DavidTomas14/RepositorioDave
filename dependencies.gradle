@@ -1,0 +1,26 @@
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+ext {
+    //Libraries
+    koinVersion = '3.1.4'
+    navigation = '2.3.0'
+    recyclerViewVersion = '1.2.1'
+    timberVersion = '5.0.1'
+
+    uiDependencies = [
+            koin :                           "io.insert-koin:koin-android:${koinVersion}",
+            recyclerView:                    "androidx.recyclerview:recyclerview:${recyclerViewVersion}",
+            recyclerViewSelection:           "androidx.recyclerview:recyclerview-selection:${recyclerViewVersion}",
+            timber:                           "com.jakewharton.timber:timber:${timberVersion}"
+    ]
+
+    navigationDependencies = [
+            navigationForFragments:         "androidx.navigation:navigation-fragment-ktx:${navigation}",
+            navigationUi:                   "androidx.navigation:navigation-ui-ktx:${navigation}"
+    ]
+
+}

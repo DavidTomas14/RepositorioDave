@@ -11,7 +11,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Activities-Fragments" />
+            <option value="$PROJECT_DIR$/Navigation" />
             <option value="$PROJECT_DIR$/UI" />
+            <option value="$PROJECT_DIR$/Utils" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

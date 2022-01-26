@@ -1,11 +1,5 @@
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
-    }
-}
 rootProject.name = "RepositorioDave"
 include ':Activities-Fragments'
 include ':UI'
+include ':Utils'
+include ':Navigation'

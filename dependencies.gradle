@@ -7,7 +7,7 @@ allprojects {
 ext {
     //Libraries
     koinVersion = '3.1.4'
-    navigation = '2.3.0'
+    navigation = '2.3.5'
     recyclerViewVersion = '1.2.1'
     timberVersion = '5.0.1'
 
@@ -20,7 +20,12 @@ ext {
 
     navigationDependencies = [
             navigationForFragments:         "androidx.navigation:navigation-fragment-ktx:${navigation}",
-            navigationUi:                   "androidx.navigation:navigation-ui-ktx:${navigation}"
+            navigationUi:                   "androidx.navigation:navigation-ui-ktx:${navigation}",
+            timber:                           "com.jakewharton.timber:timber:${timberVersion}"
+    ]
+
+    activitiesFragmentsDependencies = [
+            timber:                           "com.jakewharton.timber:timber:${timberVersion}"
     ]
 
 }

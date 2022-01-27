@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Activities-Fragments/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Activities-Fragments/src/main/res/layout/fragment_basic.xml" value="0.36822916666666666" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Navigation/src/main/res/layout/activity_navigation.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Navigation/src/main/res/layout/activity_navigatorForActivities.xml" value="0.36822916666666666" />
+        <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Navigation/src/main/res/layout/fragment_fragment1.xml" value="0.278125" />
+        <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Navigation/src/main/res/layout/fragment_fragment2.xml" value="0.278125" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/UI/src/main/res/layout/activity_main.xml" value="0.11277173913043478" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/UI/src/main/res/layout/activity_persona_adapter.xml" value="0.1" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/UI/src/main/res/layout/activity_spinner.xml" value="0.36822916666666666" />

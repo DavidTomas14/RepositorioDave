@@ -9,12 +9,13 @@ ext {
     koinVersion = '3.1.4'
     navigation = '2.3.5'
     recyclerViewVersion = '1.2.1'
+    recyclerViewSelectionVersion = '1.1.0'
     timberVersion = '5.0.1'
 
     uiDependencies = [
             koin :                           "io.insert-koin:koin-android:${koinVersion}",
             recyclerView:                    "androidx.recyclerview:recyclerview:${recyclerViewVersion}",
-            recyclerViewSelection:           "androidx.recyclerview:recyclerview-selection:${recyclerViewVersion}",
+            recyclerViewSelection:           "androidx.recyclerview:recyclerview-selection:${recyclerViewSelectionVersion}",
             timber:                           "com.jakewharton.timber:timber:${timberVersion}"
     ]
 
@@ -25,6 +26,10 @@ ext {
     ]
 
     activitiesFragmentsDependencies = [
+            timber:                           "com.jakewharton.timber:timber:${timberVersion}"
+    ]
+
+    firebaseDependencies = [
             timber:                           "com.jakewharton.timber:timber:${timberVersion}"
     ]
 

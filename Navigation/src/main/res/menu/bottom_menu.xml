@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_inicio"
+        android:title="@string/fragmento_1"
+        android:icon="@drawable/ic_home_black_24dp" />
+
+    <item
+        android:id="@+id/navigation_avisos"
+        android:title="@string/fragmento_2"
+        android:icon="@drawable/ic_notifications_none_black_24dp" />
+
+    <item
+        android:id="@+id/navigation_jornada_gastos"
+        android:title="@string/fragmento_3"
+        android:icon="@drawable/ic_timer_black_24dp" />
+
+    <item
+        android:id="@+id/navigation_sincronizacion"
+        android:title="@string/fragmento_4"
+        android:icon="@drawable/ic_sync_black_24dp" />
+
+    <item
+        android:id="@+id/navigation_mas_acciones"
+        android:title="@string/fragmento_5"
+        android:icon="@drawable/ic_add_black_24dp" />
+
+</menu>

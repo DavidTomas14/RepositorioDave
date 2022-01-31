@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Navigation</string>
+
+
+    <string name="fragmento_1">Fragmento1</string>
+    <string name="fragmento_2">Fragmento2</string>
+    <string name="fragmento_3">Fragmento3</string>
+    <string name="fragmento_4">Fragmento4</string>
+    <string name="fragmento_5">Fragmento5</string>
 </resources>

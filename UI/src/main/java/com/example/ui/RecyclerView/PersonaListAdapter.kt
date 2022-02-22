@@ -67,7 +67,7 @@ class PersonaListAdapter() :
         }
     }
 
-    fun setOfficesAdapterListener(@NonNull personaAdapterListener: PersonaAdapterListener) {
+    fun setPersonasAdapterListener(@NonNull personaAdapterListener: PersonaAdapterListener) {
         this.personaAdapterListenerWeakReference = WeakReference(personaAdapterListener)
     }
 }

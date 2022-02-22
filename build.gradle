@@ -5,9 +5,10 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:7.0.4"
+        classpath 'com.android.tools.build:gradle:7.1.1'
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
-        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.0"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.1"
+        classpath "io.insert-koin:koin-gradle-plugin:2.2.3"
         classpath 'com.google.gms:google-services:4.3.10'
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.1'
 
@@ -15,9 +16,8 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
 plugins {
-    id 'com.github.ben-manes.versions' version '0.39.0'
+    id 'com.github.ben-manes.versions' version '0.41.0'
 }
 
 apply from: 'dependencies.gradle'

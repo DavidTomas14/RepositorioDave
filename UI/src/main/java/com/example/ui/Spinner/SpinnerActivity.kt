@@ -41,7 +41,12 @@ class SpinnerActivity : AppCompatActivity() {
 
             onItemSelectedListener = object: OnItemSelectedListener{
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                    //Como en la data class Coche sobreescribimos el toString se muestra unicamente el nombre en el Spinner
                     binding.tvSpinnerSeleccion.text = spinnerAdapter.getItem(position)?.nombre ?: ""
+
+                    //Muy útil para recuperar toda la info del coche Seleccionado
+                    val cocheSeleccionado = parent?.getItemAtPosition(position) as Coche
+
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {

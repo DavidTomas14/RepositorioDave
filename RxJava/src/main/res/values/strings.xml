@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RxJava</string>
+
+    <!--RxJava Section-->
+    <string name="mostrar_nombre">Mostrar Nombre</string>
+    <string name="delete_user">Delete User</string>
+    <string name="create_user">Create User</string>
+    <string name="david">David</string>
+    <string name="error_delete">Surgió un error al Borrar User</string>
+    <string name="error_create">Surgió un error al Crear User</string>
+    <string name="confirmacion_delete">User borrado correctamente</string>
+    <string name="confirmacion_create">User creado correctamente</string>
+
+</resources>

@@ -5,4 +5,7 @@ data class Coche(
     val marca: String,
     val color: String,
     val caballos: Int
-)
+) {
+
+    override fun toString(): String = nombre
+}

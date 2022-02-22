@@ -1,6 +1,5 @@
 package com.example.ui.RecyclerView
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -35,7 +34,7 @@ class PersonaAdapterActivity : AppCompatActivity() {
         binding.rvPersona.apply {
             adapterPersona = PersonaListAdapter()
             adapter = adapterPersona
-            adapterPersona.setOfficesAdapterListener(adapterListener)
+            adapterPersona.setPersonasAdapterListener(adapterListener)
             layoutManager = LinearLayoutManager(this@PersonaAdapterActivity)
             adapterPersona.submitList(listOf(
                 Persona(1, "David  ","Alonso", "1-10-1998", "Calle principe de Asturias"),

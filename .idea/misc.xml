@@ -6,6 +6,7 @@
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Activities-Fragments/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Activities-Fragments/src/main/res/layout/fragment_basic.xml" value="0.36822916666666666" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Firebase/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Firebase/src/main/res/layout/messaging_main_activity.xml" value="0.240625" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Navigation/src/main/res/drawable-v24/ic_add_black_24dp.xml" value="0.2345" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Navigation/src/main/res/drawable-v24/ic_home_black_24dp.xml" value="0.2345" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Navigation/src/main/res/drawable-v24/ic_notifications_none_black_24dp.xml" value="0.2345" />
@@ -20,6 +21,10 @@
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Navigation/src/main/res/menu/bottom_menu.xml" value="0.2859375" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/RxJava/src/main/res/layout/activity_main.xml" value="0.36770833333333336" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/RxJava/src/main/res/layout/activity_second.xml" value="0.36822916666666666" />
+        <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Services/src/main/res/layout/activity_main.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Services/src/main/res/layout/broadcast_receiver_activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Services/src/main/res/layout/messaging_activity_main.xml" value="0.20652173913043478" />
+        <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/Services/src/main/res/layout/notifications_activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/UI/src/main/res/layout/activity_main.xml" value="0.11277173913043478" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/UI/src/main/res/layout/activity_persona_adapter.xml" value="0.1" />
         <entry key="..\:/Users/dalonsoc/Desktop/Proyectos Personales/RepositorioDave/UI/src/main/res/layout/activity_spinner.xml" value="0.36822916666666666" />

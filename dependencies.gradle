@@ -17,24 +17,17 @@ ext {
     rxKotlinVersion = '2.4.0'
     timberVersion = '5.0.1'
 
-    uiDependencies = [
-            koin :                           "io.insert-koin:koin-android:${koinVersion}",
-            recyclerView:                    "androidx.recyclerview:recyclerview:${recyclerViewVersion}",
-            recyclerViewSelection:           "androidx.recyclerview:recyclerview-selection:${recyclerViewSelectionVersion}",
+    activitiesFragmentsDependencies = [
+            timber:                           "com.jakewharton.timber:timber:${timberVersion}"
+    ]
+
+    firebaseDependencies = [
             timber:                           "com.jakewharton.timber:timber:${timberVersion}"
     ]
 
     navigationDependencies = [
             navigationForFragments:         "androidx.navigation:navigation-fragment-ktx:${navigation}",
             navigationUi:                   "androidx.navigation:navigation-ui-ktx:${navigation}",
-            timber:                           "com.jakewharton.timber:timber:${timberVersion}"
-    ]
-
-    activitiesFragmentsDependencies = [
-            timber:                           "com.jakewharton.timber:timber:${timberVersion}"
-    ]
-
-    firebaseDependencies = [
             timber:                           "com.jakewharton.timber:timber:${timberVersion}"
     ]
 
@@ -53,5 +46,26 @@ ext {
             roomKtx:                          "androidx.room:room-ktx:$roomVersion",
             timber:                           "com.jakewharton.timber:timber:${timberVersion}"
     ]
+
+    SevicesDependencies = [
+            timber:                           "com.jakewharton.timber:timber:${timberVersion}"
+    ]
+
+    uiDependencies = [
+            koin :                           "io.insert-koin:koin-android:${koinVersion}",
+            recyclerView:                    "androidx.recyclerview:recyclerview:${recyclerViewVersion}",
+            recyclerViewSelection:           "androidx.recyclerview:recyclerview-selection:${recyclerViewSelectionVersion}",
+            timber:                           "com.jakewharton.timber:timber:${timberVersion}"
+    ]
+
+
+
+
+
+
+
+
+
+
 
 }

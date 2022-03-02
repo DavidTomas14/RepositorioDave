@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.services">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:name=".ServicesApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RepositorioDave">
+
+        <activity
+            android:name=".AlarmManager.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".BroadcastReceiver.AirplaneModeChangedReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.example.services.messaging_receiver_service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".messaging_receiver_service.MyService"/>
+
+        <service android:name=".Service.MyService"/>
+
+        <receiver
+            android:name=".messaging_receiver_service.BroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.services.BroadCastReceiver.action-sincronizacion.action.TAREA_1" />
+                <action android:name="com.example.services.BroadCastReceiver.action-sincronizacion.action.TAREA_2" />
+                </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".AlarmManager.AlarmBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.services.BroadCastReceiver.action-sincronizacion.action.TAREA_3" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

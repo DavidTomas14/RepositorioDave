@@ -1,4 +1,4 @@
-package com.example.ui.RecyclerView
+package com.example.ui.RecyclerView.BasicPersonaRV
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

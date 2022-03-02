@@ -1,4 +1,4 @@
-package com.example.ui.RecyclerView
+package com.example.ui.RecyclerView.BasicPersonaRV
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

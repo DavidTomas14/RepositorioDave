@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/container"
-    android:background="@color/teal_200"
+    android:background="#BAAB29"
     android:layout_margin="5dp"
     tools:context=".RecyclerView.BasicPersonaRV.PersonaAdapterActivity">
 
     <LinearLayout
+        android:id="@+id/ll_fruta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,58 +25,47 @@
             android:padding="5dp">
 
             <TextView
-                android:id="@+id/tv_nombre"
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                tools:text="David" />
-            <Space
-                android:layout_width="20dp"
-                android:layout_height="0dp"/>
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="FRUIT" />
 
             <TextView
-                android:id="@+id/tv_appellidos"
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                tools:text="Alonso" />
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                tools:text="Sandía" />
+
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tv_fechaNac"
+            android:id="@+id/tv_color"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="1-10-1998"
+            android:textAlignment="textEnd"
+            tools:text="Red"
             android:padding="5dp"/>
         <TextView
-            android:id="@+id/tv_direccion"
+            android:id="@+id/tv_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Calle Principe Asturias 12 4c"
-            android:padding="5dp"/>
+            android:textAlignment="textEnd"
+            tools:text="Dulce"
+            android:padding="5dp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="end">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_eliminar"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_gravity="bottom"
-            android:textSize="10sp"
-            android:text="eliminar" />
-
         <Space
             android:layout_width="20dp"
             android:layout_height="0dp"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_detalle"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:textSize="10sp"
-            android:layout_gravity="bottom"
-            android:text="detalle"/>
 
     </LinearLayout>
 

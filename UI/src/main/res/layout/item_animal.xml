@@ -10,11 +10,13 @@
     tools:context=".RecyclerView.BasicPersonaRV.PersonaAdapterActivity">
 
     <LinearLayout
+        android:id="@+id/ll_animal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,32 +25,35 @@
             android:padding="5dp">
 
             <TextView
-                android:id="@+id/tv_nombre"
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                tools:text="David" />
-            <Space
-                android:layout_width="20dp"
-                android:layout_height="0dp"/>
+                android:layout_weight="1"
+                tools:text="Perro" />
 
             <TextView
-                android:id="@+id/tv_appellidos"
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                tools:text="Alonso" />
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="ANIMAL" />
+
+
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tv_fechaNac"
+            android:id="@+id/tv_alimentacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="1-10-1998"
+            tools:text="Carnívoro"
             android:padding="5dp"/>
         <TextView
-            android:id="@+id/tv_direccion"
+            android:id="@+id/tv_reproduccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Calle Principe Asturias 12 4c"
+            tools:text="Vivíparo"
             android:padding="5dp"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,25 +61,9 @@
         android:orientation="horizontal"
         android:gravity="end">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_eliminar"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_gravity="bottom"
-            android:textSize="10sp"
-            android:text="eliminar" />
-
         <Space
             android:layout_width="20dp"
             android:layout_height="0dp"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_detalle"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:textSize="10sp"
-            android:layout_gravity="bottom"
-            android:text="detalle"/>
 
     </LinearLayout>
 

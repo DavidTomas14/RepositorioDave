@@ -1,4 +1,4 @@
-package com.example.ui.RecyclerView
+package com.example.ui.RecyclerView.BasicPersonaRV
 
 data class Persona(
     val id:Int,

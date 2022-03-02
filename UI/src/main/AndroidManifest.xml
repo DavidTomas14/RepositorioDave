@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RepositorioDave">
         <activity
-            android:name=".Spinner.SpinnerActivity"
+            android:name=".RecyclerView.DifferentTypesAndHeaderRv.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

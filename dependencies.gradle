@@ -8,6 +8,7 @@ ext {
     //Libraries
     annotationVersion = '1.3.0'
     koinVersion = '3.1.5'
+    materialDesignVersion = '1.5.0'
     navigation = '2.3.5'
     recyclerViewVersion = '1.2.1'
     recyclerViewSelectionVersion = '1.1.0'
@@ -26,9 +27,10 @@ ext {
     ]
 
     navigationDependencies = [
+            materialDesign:                 "com.google.android.material:material:${materialDesignVersion}",
             navigationForFragments:         "androidx.navigation:navigation-fragment-ktx:${navigation}",
             navigationUi:                   "androidx.navigation:navigation-ui-ktx:${navigation}",
-            timber:                           "com.jakewharton.timber:timber:${timberVersion}"
+            timber:                         "com.jakewharton.timber:timber:${timberVersion}"
     ]
 
     RxJavaDependencies = [

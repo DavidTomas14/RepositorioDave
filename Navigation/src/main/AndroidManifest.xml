@@ -27,10 +27,6 @@
             android:name=".NavigatorForActivities.ActivityTwo"
             android:exported="true">
         </activity>
-        <!--<activity
-            android:name=".BottomNavigation.ActivityBottomNavigation"
-            android:exported="true">
-        </activity>-->
         <activity
             android:name=".NavGraphFragments.NavGraphActivity"
             android:exported="true">

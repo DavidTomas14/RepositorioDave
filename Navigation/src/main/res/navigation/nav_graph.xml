@@ -23,15 +23,21 @@
         tools:layout="@layout/fragment_fragment1">
         <action
             android:id="@+id/action_fragment3_to_fragment4"
-            app:destination="@id/fragment4" />
+            app:destination="@id/fragment4" >
+            <argument
+                android:name="argumento"
+                app:argType="string" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/fragment4"
         android:name="com.example.navigation.NavGraphFragments.Fragment4"
         android:label="Fragment4"
         tools:layout="@layout/fragment_fragment1">
-        <argument android:name="argumento"
-            app:argType="string" />
+        <argument
+            android:name="argumento"
+            app:argType="string"
+            android:defaultValue="Nada" />
     </fragment>
 
 </navigation>

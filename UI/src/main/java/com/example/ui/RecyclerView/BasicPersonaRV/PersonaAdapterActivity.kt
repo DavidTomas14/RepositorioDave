@@ -31,17 +31,18 @@ class PersonaAdapterActivity : AppCompatActivity() {
 
 
     private fun setUpRecyclerView() {
+        adapterPersona = PersonaListAdapter()
+        adapterPersona.setPersonasAdapterListener(adapterListener)
         binding.rvPersona.apply {
-            adapterPersona = PersonaListAdapter()
             adapter = adapterPersona
-            adapterPersona.setPersonasAdapterListener(adapterListener)
             layoutManager = LinearLayoutManager(this@PersonaAdapterActivity)
+        }
             adapterPersona.submitList(listOf(
                 Persona(1, "David  ","Alonso", "1-10-1998", "Calle principe de Asturias"),
                 Persona(2, "Lucia","Zayas", "5-3-1998", "Calle Jose Bergamin"),
                 Persona(3, "Miguel Angel","Alonso", "20-2-1996", "Calle principe de Asturias"),
                 Persona(4, "Fernando","Alonso", "30-5-2003", "Calle principe de Asturias"),
             ).toMutableList())
-        }
+
     }
 }

@@ -10,17 +10,15 @@ import com.example.ui.databinding.ItemPersonaBinding
 import java.lang.ref.WeakReference
 
 class PersonaListAdapter() :
-    ListAdapter<Persona, PersonaListAdapter.PersonaViewHolder>(DifferCallback) {
+    ListAdapter<Persona, PersonaListAdapter.PersonaViewHolder>(DifferCallback()) {
 
-    companion object {
-        object DifferCallback : DiffUtil.ItemCallback<Persona>() {
-            override fun areItemsTheSame(oldItem: Persona, newItem: Persona): Boolean {
-                return oldItem.id == newItem.id
-            }
+    private class DifferCallback : DiffUtil.ItemCallback<Persona>() {
+        override fun areItemsTheSame(oldItem: Persona, newItem: Persona): Boolean {
+            return oldItem.id == newItem.id
+        }
 
-            override fun areContentsTheSame(oldItem: Persona, newItem: Persona): Boolean {
-                return oldItem == newItem
-            }
+        override fun areContentsTheSame(oldItem: Persona, newItem: Persona): Boolean {
+            return oldItem == newItem
         }
     }
 
@@ -29,13 +27,12 @@ class PersonaListAdapter() :
         fun onEliminarClicked(persona: Persona)
     }
 
-    private var personasList: List<Persona> = ArrayList()
     private var personaAdapterListenerWeakReference: WeakReference<PersonaAdapterListener>? = null
 
 
     class PersonaViewHolder(val binding: ItemPersonaBinding) : RecyclerView.ViewHolder(binding.root)
 
-    override fun getItemCount(): Int = personasList.size
+    override fun getItemCount(): Int = currentList.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonaViewHolder {
         val binding = ItemPersonaBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -43,12 +40,20 @@ class PersonaListAdapter() :
     }
 
     override fun onBindViewHolder(holder: PersonaViewHolder, position: Int) {
-        val persona = personasList[position]
+        val persona = currentList[position]
         holder.binding.apply {
             tvNombre.text = persona.nombre
             tvAppellidos.text = persona.apellido
             tvDireccion.text = persona.direccion
             tvFechaNac.text = persona.fechaNaci
+
+            //Ejemplo de como cargar una imagen con Glide
+        /*    Glide
+                .with(ivCardRowAvatarImage.context)
+                .load(url)
+                .centerCrop()
+                .placeholder(R.drawable.splash_background)
+                .into(ivCardRowAvatarImage);*/
 
             btnDetalle.setOnClickListener {
                 this@PersonaListAdapter.personaAdapterListenerWeakReference
@@ -58,12 +63,6 @@ class PersonaListAdapter() :
                 this@PersonaListAdapter.personaAdapterListenerWeakReference
                     ?.get()?.onEliminarClicked(persona)
             }
-        }
-    }
-
-     override fun submitList(list: MutableList<Persona>?) {
-        if (personasList.isEmpty()) {
-            personasList = list!!
         }
     }
 

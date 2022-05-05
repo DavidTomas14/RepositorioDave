@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.navigation.NavGraphFragments.argumentObjeto.Bolsa
 import com.example.navigation.R
 import com.example.navigation.Utils.BaseFragment
 import com.example.navigation.databinding.FragmentFragment1Binding
@@ -27,7 +28,12 @@ class Fragment1 : BaseFragment() {
     override fun initializeViews(savedInstanceState: Bundle?) {
         super.initializeViews(savedInstanceState)
         binding.btnNavegar.setOnClickListener {
-            findNavController().navigate(R.id.fragment2)
+            val bolsa = Bolsa(
+                "Tazos de Pokemón",
+                "El jabulani",
+                "Camiseta del Bicho"
+            )
+            findNavController().navigate(Fragment1Directions.actionFragment1ToFragment2(bolsa))
         }
     }
 }

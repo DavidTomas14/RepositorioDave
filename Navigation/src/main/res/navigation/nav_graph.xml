@@ -9,12 +9,24 @@
         android:id="@+id/fragment1"
         android:name="com.example.navigation.NavGraphFragments.Fragment1"
         android:label="Fragment1"
-        tools:layout="@layout/fragment_fragment1"/>
+        tools:layout="@layout/fragment_fragment1">
+        <action
+            android:id="@+id/action_fragment1_to_fragment2"
+            app:destination="@id/fragment2">
+            <argument
+                android:name="argumentoObjeto"
+                app:argType="com.example.navigation.NavGraphFragments.argumentObjeto.Bolsa" />
+        </action>
+    </fragment>
     <fragment
         android:id="@+id/fragment2"
         android:name="com.example.navigation.NavGraphFragments.Fragment2"
         android:label="Fragment2"
-        tools:layout="@layout/fragment_fragment1"/>
+        tools:layout="@layout/fragment_fragment1">
+        <argument
+            android:name="argumentoObjeto"
+            app:argType="com.example.navigation.NavGraphFragments.argumentObjeto.Bolsa" />
+    </fragment>
 
     <fragment
         android:id="@+id/fragment3"

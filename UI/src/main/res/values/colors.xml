@@ -1,10 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">@color/blueCornflower</color>
+    <color name="colorPrimaryDark">@color/blueIndigo</color>
+    <color name="colorPrimaryTextInputHint">@color/greyLight</color>
+    <color name="colorAccent">@color/orangeCarrot</color>
+    <color name="colorAccentDark">@color/orangePumpkin</color>
+
+    <color name="colorLightBackground">#E8E8E8</color>
+    <color name="colorPrimaryText">@color/blueCornflower</color>
+    <color name="colorPrimaryTextDisabled">@color/greyLight</color>
+    <color name="colorPrimaryTextWhite">@color/white</color>
+    <color name="colorPrimaryTextLight">@color/orangeCarrotLight</color>
+    <color name="colorPrimaryTextLightDisabled">@color/greyLight</color>
+    <color name="colorPrimaryLinkText">@android:color/holo_blue_dark</color>
+    <color name="colorError">#f44336</color>
+    <color name="itemListBackgroundColor">@color/whiteBackground</color>
+    <color name="colorStatusErrorStart">@color/pinkPale</color>
+    <color name="colorStatusErrorEnd">@color/red</color>
+    <color name="colorStatusOkStart">@color/greenApple</color>
+    <color name="colorStatusOkEnd">@color/greenGrass</color>
+    <color name="colorStatusPendingStart">@color/yellowMustard</color>
+    <color name="colorStatusPendingEnd">@color/orangePumpkin</color>
+    <color name="colorPVButtonStart">@color/yellowMustard</color>
+    <color name="colorPVButtonEnd">@color/orangeCarrot</color>
+    <color name="colorValidButtonStart">@color/greenApple</color>
+    <color name="colorValidButtonEnd">@color/greenGrass</color>
+    <color name="colorRejectedButtonStart">@color/pinkPale</color>
+    <color name="colorRejectedButtonEnd">@color/red</color>
+    <color name="colorPendingButtonStart">@color/yellowMustard</color>
+    <color name="colorPendingButtonEnd">@color/orangePumpkin</color>
+    <color name="colorTraslucentMenu">@color/orangePumpkin</color>
+    <color name="colorOnboardingTabGrey">@color/greyDark</color>
+    <color name="colorOnboardingTabSelected">@color/bluePetroleum</color>
+    <color name="colorStrokeLight">#F5F5F5</color>
+    <color name="colorDivider">#14000000</color>
+    <color name="transparencyDarkerLayer">@color/grey_translucent_hard</color>
+    <color name="transparencyDarkLayer">@color/grey_translucent_smooth</color>
+    <color name="transparencyLighterLayer">@color/white_translucent_hard</color>
+    <color name="transparencyLightLayer">@color/white_translucent_smooth</color>
+
+    <color name="rippleEffectColor">#40FFFFFF</color>
+    <color name="rippleEffectColorDark">#60000000</color>
+
+    <!-- region rawColors -->
+    <color name="pinkPale">#FF9B78</color>
+    <color name="redError">#FF2B2B</color>
+    <color name="red">#FF0000</color>
+    <color name="orangeCarrot">#FF5800</color>
+    <color name="orangeCarrotLight">#F2692D</color>
+    <color name="orangePumpkin">#F7941E</color>
+    <color name="orangePumpkinSemi">#fce7cf</color>
+    <color name="orangeBronze">#CD7F32</color>
+    <color name="yellowGold">#D4AF37</color>
+    <color name="yellowMustard">#FED16F</color>
+    <color name="greenApple">#B9FE6F</color>
+    <color name="greenGrass">#2DC100</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteBackground">#F8F8F8</color>
+    <color name="greyLighter">#E8E8E8</color>
+    <color name="greyLight">#C7C7C7</color>
+    <color name="greyDark">#818181</color>
+    <color name="greyDarker">#444444</color>
+    <color name="blueCornflower">#4D5E73</color>
+    <color name="bluePetroleum">#304C5C</color>
+    <color name="blueIndigo">#091A2D</color>
+    <color name="blueMarine">#295687</color>
+    <color name="celest_translucent_hard">#DDD4F3FF</color>
+    <color name="celest_translucent_smooth">#EBEDF5FF</color>
+    <color name="grey_translucent_hard">#99000000</color>
+    <color name="grey_translucent_smooth">#44000000</color>
+    <color name="white_translucent_hard">#77FFFFFF</color>
+    <color name="white_translucent_smooth">#44FFFFFF</color>
+    <color name="lightBlue">#ECF8FE</color> <!-- Used for light status bar -->
+    <!-- endregion -->
+
+    <!-- Text colors -->
+    <color name="colorMaterialPrimaryTextLight">#DEFFFFFF</color>
+    <color name="colorMaterialPrimaryTextDark">#DE000000</color>
+    <color name="colorMaterialSecondaryTextLight">#B3FFFFFF</color>
+    <color name="colorMaterialSecondaryTextDark">#99000000</color>
+    <color name="colorMaterialDisabledTextLight">#61FFFFFF</color>
+    <color name="colorMaterialDisabledTextDark">#61000000</color>
 </resources>

@@ -27,6 +27,7 @@ ext {
     ]
 
     navigationDependencies = [
+            koin :                           "io.insert-koin:koin-android:${koinVersion}",
             materialDesign:                 "com.google.android.material:material:${materialDesignVersion}",
             navigationForFragments:         "androidx.navigation:navigation-fragment-ktx:${navigation}",
             navigationUi:                   "androidx.navigation:navigation-ui-ktx:${navigation}",
